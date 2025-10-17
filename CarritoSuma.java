@@ -54,6 +54,7 @@ public class CarritoSuma {
 
 
         // TODO (opción teclado): pedir N, crear array, leer nombre y precio por cada producto.
+        carrito[0] = "Mouse";
 
         // TODO: llamar a totalCarrito(carrito) y mostrar con printf "Total: %.2f €"
 
