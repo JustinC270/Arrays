@@ -40,11 +40,12 @@ public class BusquedaArtistas {
         // con 'nombreBuscado' usando equalsIgnoreCase.
         // Si coincide, devuelve i. Si terminas el bucle sin encontrarlo, devuelve -1.
         for (int i = 0; i < cartel.length; i++) {
-            if(cartel[i].getNombre().equalsIgnoreCase(nombreBuscado));
-                }
+            if(cartel[i].getNombre().equalsIgnoreCase(nombreBuscado)){
+                return i;
+            }
+        }
             return -1;
     }
-
     /**
      * Indica si existe un artista con ese nombre.
      * @param cartel array de artistas
@@ -55,9 +56,8 @@ public class BusquedaArtistas {
         // TODO:
         // Devuelve true si indiceDe(cartel, nombreBuscado) es distinto de -1.
         // En caso contrario, false.
-        return false;
+        return indiceDe(cartel, nombreBuscado)!= -1; /*!= Distinto */
     }
-
     /**
      * Devuelve un array con todos los índices donde el nombre coincide (ignora mayúsculas).
      * Si no hay coincidencias, devuelve un array de longitud 0.
@@ -71,6 +71,7 @@ public class BusquedaArtistas {
         // 2) Crea un nuevo int[] del tamaño contado.
         // 3) Recorre de nuevo y rellena ese array con los índices encontrados.
         // 4) Devuélvelo.
+
         return new int[0];
     }
 
