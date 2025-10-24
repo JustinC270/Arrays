@@ -41,7 +41,9 @@ public class BusquedaArtistas {
         // Si coincide, devuelve i. Si terminas el bucle sin encontrarlo, devuelve -1.
         for (int i = 0; i < cartel.length; i++) {
             cartel[i].getNombre();
-            if(cartel[i].getNombre().equalsIgnoreCase(nombreBuscado));
+            if(cartel[i].getNombre().equalsIgnoreCase(nombreBuscado)){
+                
+            }
             
         return -1;
         
